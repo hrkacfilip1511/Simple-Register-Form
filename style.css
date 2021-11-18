@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  flex-direction: column;
+}
+.big-container {
+  border-radius: 50px;
+  width: 400px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(238, 180, 199);
+  position: relative;
+}
+.container {
+  width: 400px;
+  height: 420px;
+  background-color: rgb(80, 83, 83);
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  position: absolute;
+  bottom: 0;
+}
+.fa-user-tie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(99, 99, 99);
+  font-size: 3.7rem;
+  border-radius: 50%;
+  background-color: rgb(250, 210, 135);
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 1%;
+}
+h2 {
+  color: rgb(46, 36, 36);
+  position: absolute;
+  top: 20%;
+  letter-spacing: 1px;
+}
+.for-username {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+}
+#usName {
+  color: white;
+}
+#username {
+  padding: 7px;
+  border-radius: 10px;
+
+  margin: 5px 0;
+}
+.for-email {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+}
+#mail {
+  color: white;
+}
+#email {
+  padding: 7px;
+  border-radius: 10px;
+
+  margin: 5px 0;
+}
+.for-password {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+}
+#passwrd {
+  color: white;
+}
+#password {
+  padding: 7px;
+  border-radius: 10px;
+
+  margin: 5px 0;
+}
+.for-conf-password {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+}
+#conf-passwrd {
+  color: white;
+}
+#confirm-password {
+  padding: 7px;
+  border-radius: 10px;
+
+  margin: 5px 0;
+}
+small {
+  color: red;
+  display: none;
+}
+#username:focus,
+#email:focus,
+#password:focus,
+#confirm-password:focus {
+  outline: none;
+}
+.submit {
+  width: 100%;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: plum;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.submit:hover {
+  opacity: 0.8;
+  color: white;
+}
+
+.correct {
+  border-color: rgb(1, 252, 1);
+}
+.wrong {
+  border-color: #ff0000;
+}
+body {
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -4;
+}
+body:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.6;
+}
